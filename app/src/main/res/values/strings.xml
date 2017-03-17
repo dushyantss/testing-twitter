@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Testing Twitter Plugin</string>
+    <string name="backround_image">Backround Image</string>
+
+    <string name="fabric_api_key">0a69d2a7b290b2877c9d235a5bf65295ad7e3a0e</string>
+    <string name="login_failure">Sorry could not log in</string>
+    <string name="login_success">Logged In</string>
+    <string name="loading_indicator">BallClipRotateMultipleIndicator</string>
+    <string name="fetching_info_failure">Could not fetch your info</string>
+    <string name="internet_failure">Please turn on internet and restart the app</string>
+    <string name="welcome_space">"Welcome "</string>
+</resources>
