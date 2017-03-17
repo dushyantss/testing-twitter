@@ -21,6 +21,10 @@ public class CurrentUser {
         mId = id;
         mName = name;
         mBackgroundColor = backgroundColor;
+        // this needs to be done so that Color.parseColor can work
+        if (backgroundColor != null && !backgroundColor.isEmpty() && !backgroundColor.startsWith("#")) {
+            mBackgroundColor = "#" + mBackgroundColor;
+        }
         mProfileImage = profileImage;
         mDescription = description;
         mLastUpdated = lastUpdated;

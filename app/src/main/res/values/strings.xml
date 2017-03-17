@@ -9,4 +9,5 @@
     <string name="fetching_info_failure">Could not fetch your info</string>
     <string name="internet_failure">Please turn on internet and restart the app</string>
     <string name="welcome_space">"Welcome "</string>
+    <string name="profile_image">Profile Image</string>
 </resources>

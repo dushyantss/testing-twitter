@@ -24,6 +24,10 @@ import java.util.Calendar;
 
 import retrofit2.Call;
 
+/**
+ * Basic flow is: we login with the button, if success we fetch user info and store so that we can
+ * show it instantly. if failure we show error
+ */
 public class LoginActivity extends AppCompatActivity {
 
     private TwitterLoginButton mLoginButton;

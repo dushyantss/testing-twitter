@@ -19,7 +19,6 @@ import com.loktra.testingtwitterplugin.models.CurrentUser;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
-import com.twitter.sdk.android.core.TwitterApiException;
 import com.twitter.sdk.android.core.TwitterException;
 import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.models.User;
@@ -28,6 +27,10 @@ import com.wang.avi.AVLoadingIndicatorView;
 import java.util.Calendar;
 
 import retrofit2.Call;
+
+/**
+ * Basic flow is: we show animation. on animation end we check and show appropriate activity.
+ */
 
 public class SplashScreenActivity extends AppCompatActivity {
 
