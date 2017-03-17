@@ -49,9 +49,13 @@ public class HomeActivity extends AppCompatActivity {
         if (mUser.getBackgroundColor() != null && !mUser.getBackgroundColor().isEmpty()) {
             mMainView.setBackgroundColor(Color.parseColor(mUser.getBackgroundColor()));
         }
-        Glide.with(getApplicationContext())
-                .load(mUser.getProfileImage())
-                .asBitmap()
-                .into(mProfileImage);
+
+        if (mProfileImage != null) {
+            Glide.with(getApplicationContext())
+                    .load(mUser.getProfileImage())
+                    .asBitmap()
+                    .into(mProfileImage);
+        }
+
     }
 }

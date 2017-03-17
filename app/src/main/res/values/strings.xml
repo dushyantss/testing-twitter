@@ -10,4 +10,6 @@
     <string name="internet_failure">Please turn on internet and restart the app</string>
     <string name="welcome_space">"Welcome "</string>
     <string name="profile_image">Profile Image</string>
+    <string name="logout">LOGOUT</string>
+    <string name="tweets">Tweets</string>
 </resources>
