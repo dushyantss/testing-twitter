@@ -17,4 +17,6 @@ public class Constants {
     public static final String USER_DESCRIPTION = BuildConfig.APPLICATION_ID + "user_description";
     public static final String USER_LAST_UPDATED = BuildConfig.APPLICATION_ID + "user_last_updated";
     public static final long ONE_DAY = 1000 * 60 * 60 * 24;
+    public static final long MR_MODI_ID = 18839785L;
+    public static final int MAX_ITEMS_PER_REQUEST = 10;
 }

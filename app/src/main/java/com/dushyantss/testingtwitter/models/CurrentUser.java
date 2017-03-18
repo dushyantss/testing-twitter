@@ -12,7 +12,6 @@ public class CurrentUser {
 
     private String mId;
     private String mName;
-    private String mBackgroundColor;
     private String mProfileImage;
     private String mDescription;
     private long mLastUpdated;
@@ -21,15 +20,9 @@ public class CurrentUser {
 
     }
 
-    public CurrentUser(String id, String name, String backgroundColor, String profileImage, String description, long lastUpdated) {
+    public CurrentUser(String id, String name, String profileImage, String description, long lastUpdated) {
         mId = id;
         mName = name;
-        mBackgroundColor = backgroundColor;
-
-        // this needs to be done so that Color.parseColor can work
-        if (backgroundColor != null && !backgroundColor.isEmpty() && !backgroundColor.startsWith("#")) {
-            mBackgroundColor = "#" + mBackgroundColor;
-        }
 
         // this needs to be done because by default we get either 48x48(normal) or 73x73(bigger)
         mProfileImage = profileImage;
@@ -44,7 +37,7 @@ public class CurrentUser {
     }
 
     public CurrentUser(User user){
-        this(user.idStr, user.name, user.profileBackgroundColor, user.profileImageUrlHttps,
+        this(user.idStr, user.name, user.profileImageUrlHttps,
                 user.description, Calendar.getInstance().getTimeInMillis());
     }
 
@@ -70,14 +63,6 @@ public class CurrentUser {
 
     public void setName(String name) {
         mName = name;
-    }
-
-    public String getBackgroundColor() {
-        return mBackgroundColor;
-    }
-
-    public void setBackgroundColor(String backgroundColor) {
-        mBackgroundColor = backgroundColor;
     }
 
     public String getProfileImage() {

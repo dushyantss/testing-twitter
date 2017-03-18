@@ -11,4 +11,6 @@
     <string name="profile_image">Profile Image</string>
     <string name="logout">LOGOUT</string>
     <string name="tweets">Tweets</string>
+    <string name="no_tweets">No Tweets</string>
+    <string name="narendramodi">\@narendramodi</string>
 </resources>
