@@ -34,9 +34,9 @@ public class CurrentUser {
         // this needs to be done because by default we get either 48x48(normal) or 73x73(bigger)
         mProfileImage = profileImage;
         if (mProfileImage.contains("_bigger")) {
-            mProfileImage = mProfileImage.replace("_bigger", "");
+            mProfileImage = mProfileImage.replace("_bigger", "_400x400");
         } else if(mProfileImage.contains("_normal")){
-            mProfileImage = mProfileImage.replace("_normal", "");
+            mProfileImage = mProfileImage.replace("_normal", "_400x400");
         }
 
         mDescription = description;
